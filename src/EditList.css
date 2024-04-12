@@ -1,0 +1,75 @@
+/* body {
+  background: rgba(0, 0, 0, 0.5);
+} */
+.editBox {
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 600px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.editContainer {
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.editContainer .editItem {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.editContainer .addList {
+  margin: 10px 0px;
+  padding: 20px;
+}
+
+.editTextarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+.editClose {
+  background-color: #e9ecef;
+  border:none;
+  font-size: 20px;
+}
+.editClose:hover {
+  cursor: pointer;
+  color: red;
+}
+.saveBox {
+  display: flex;
+  justify-content: space-between;
+}
+.saveBtn {
+  border: none;
+  border: 2px solid #5ea070;
+  margin-right: 10px;
+  background-color: #6fca96;
+  color: white;
+  border-radius: 2px;
+  padding: 5px;
+}
+.saveBtn:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.saveBtn:disabled {
+  opacity: .5;
+  cursor: default;
+}

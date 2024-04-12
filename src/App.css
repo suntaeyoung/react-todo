@@ -1,8 +1,36 @@
-.App {
-  text-align: center;
+
+.blackBg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.black-nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  position: relative;
+  font-size: 18px;
+  height: 60px;
+  align-items: center;
+  border-radius: 8px;
+  margin: 20px;
+}
+.black-nav .menu {
+  position: absolute;
+  right: 20px;
+}
+.containers {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +63,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

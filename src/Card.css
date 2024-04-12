@@ -1,0 +1,43 @@
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.listItems{
+  background-color: #e9ecef;
+}
+.todo-container .listItems {
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+}
+.todo-container .listItems:last-child {
+  margin: 0;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.title {
+  font-weight: 800;
+}
+.listCount {
+  color: red;
+}
+
+.plusBtn {
+  cursor: pointer;
+  font-weight: 800;
+}
+.plusBtn:hover {
+  color: red;
+}
+.openBtn {
+  transition: transform .3s ease; /* 변환에 대한 애니메이션 효과 */
+  transform-origin: center; /* 회전 중심을 요소의 중심으로 설정 */
+}
+.openBtn.plusBtnActive {
+  transform: rotate(45deg);
+}
