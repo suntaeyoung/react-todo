@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./EditList.css";
+import "../css/EditList.css";
 
 function EditList(props) {
   

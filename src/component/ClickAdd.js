@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import './ClickAdd.css';
+import '../css/ClickAdd.css';
 
 function ClickAdd(props) {
-
-  const titleArray = props.title;
 
   const [inputValue, setInputValue] = useState('');
 
@@ -11,20 +9,19 @@ function ClickAdd(props) {
     const newValue = e.target.value;
     setInputValue(newValue);
   };
-
+  
   const handleAdd = () => {
-    const index = titleArray.indexOf(props.title);
     const storedItems = JSON.parse(localStorage.getItem('data'));
   
-    if (index >= 0 && index <= props.title.length - 1) {
-      storedItems[props.title].unshift(inputValue);
-      localStorage.setItem('data', JSON.stringify(storedItems));
+    storedItems[props.title].unshift(inputValue);
+    localStorage.setItem('data', JSON.stringify(storedItems));
 
-      props.setCount(storedItems[props.title].length);
-    }
+    props.setCount(storedItems[props.title].length);
+
+    // 화면에 리스트 추가
+    props.setItems([inputValue, ...props.items]);
 
     // 입력값 초기화
-    props.setItems([inputValue, ...props.items]);
     setInputValue('');
   };
 

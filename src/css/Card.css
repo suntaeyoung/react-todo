@@ -3,16 +3,16 @@
   justify-content: space-between;
   margin: 20px;
 }
-.listItems{
+[class^="listItems"] {
   background-color: #e9ecef;
 }
-.todo-container .listItems {
+[class^="listItems"] {
   border-radius: 8px;
   width: 100%;
   padding: 10px;
   margin-right: 10px;
 }
-.todo-container .listItems:last-child {
+[class^="listItems"]:last-child {
   margin: 0;
 }
 .item {
