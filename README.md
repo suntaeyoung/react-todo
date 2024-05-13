@@ -11,4 +11,4 @@
 - 목록들은 브라우저 새로고침시에도 유지됩니다.
 
 ## 실행 주소
-REACT Todo List 웹앱은 다음 주소에서 실행할 수 있습니다: [REACT Todo List 웹앱 실행 주소](https://react-todo-theta-sand.vercel.app/)
+REACT Todo List 웹앱은 다음 주소에서 실행할 수 있습니다: [REACT Todo List 웹앱 실행 주소](https://ty-react-todolist.netlify.app/)
